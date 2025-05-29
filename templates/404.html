@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found | RD Cafe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-color: #fff4e6;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .error-box {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px;
+            border: 2px dashed #ff6f61;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 100px;
+            color: #ff6f61;
+            margin: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #e2554f;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-box">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Oops! तपाईँले खोज्नुभएको पेज भेटिएन। कृपया मुख्य मेनुमा फर्कनुहोस्।</p>
+        <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>
